@@ -2,7 +2,7 @@
 
 A full-stack web application for property management operations. Built with React and Firebase, it provides guest-facing and internal tools for managing bookings, refunds, and maintenance issues — all from a single deployed URL.
 
-**🔗 Live Demo → [YOUR_PROJECT_ID.web.app](https://vibe-coder-assessment.web.app)**
+**🔗 Live Demo → [https://vibe-coder-assessment.web.app](https://vibe-coder-assessment.web.app)**
 
 ---
 
