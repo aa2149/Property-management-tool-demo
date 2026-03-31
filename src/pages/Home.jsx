@@ -54,16 +54,16 @@ export default function Home() {
         <div className="inline-flex items-center gap-2 rounded-full bg-brand-50 border border-brand-100
                         px-4 py-1.5 text-xs font-700 uppercase tracking-widest text-brand-600 mb-6">
           <span className="h-1.5 w-1.5 rounded-full bg-brand-600 animate-pulse" />
-          Vibe Coder Assessment
+          AI Systems Developer (Vibe Coder) - Assessment for Deluxe Holiday Homes
         </div>
         <h1 className="text-5xl font-800 text-brand-900 leading-tight mb-4">
           Property Management<br />
           <span className="text-brand-600">Portal</span>
         </h1>
-        <p className="text-slate-500 text-base font-500 max-w-lg mx-auto">
+        {/* <p className="text-slate-500 text-base font-500 max-w-lg mx-auto">
           A full-stack React + Firebase app built for the Vibe Coder take-home assessment.
           Two tasks, one deployment.
-        </p>
+        </p> */}
       </div>
 
       {/* Task cards */}
