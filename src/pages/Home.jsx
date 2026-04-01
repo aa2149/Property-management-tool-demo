@@ -56,10 +56,17 @@ export default function Home() {
       <div className="text-center mb-14 animate-fade-up">
         {/* Logo wordmark */}
         <div className="flex items-center justify-center gap-3 mb-8">
-          <div className="relative h-14 w-14">
+          {/* <div className="relative h-14 w-14">
             <svg viewBox="0 0 56 56" fill="none" className="h-14 w-14">
               <rect width="56" height="56" rx="12" fill="#1A2D6E"/>
               <path d="M10 40 Q28 10 46 40" stroke="#00B3D7" strokeWidth="3.5" fill="none" strokeLinecap="round"/>
+            </svg>
+          </div> */}
+
+          <div className="relative h-14 w-14">
+            <svg viewBox="0 0 56 56" fill="none" className="h-14 w-14">
+              <rect width="56" height="56" rx="12" fill="#1A2D6E"/>
+              <path d="M12 42 Q28 12 44 42" stroke="#00B3D7" strokeWidth="4" fill="none" strokeLinecap="round"/>
             </svg>
           </div>
           <div className="text-left">

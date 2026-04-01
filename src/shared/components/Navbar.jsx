@@ -43,13 +43,20 @@ export default function Navbar() {
         {/* Logo — Deluxe Holiday Homes */}
         <Link to="/" className="flex items-center gap-3 group shrink-0">
           {/* DHH Arc Logo mark */}
+          {/* <div className="relative h-9 w-9 shrink-0"> */}
+            {/* <svg viewBox="0 0 36 36" fill="none" className="h-9 w-9"> */}
+              {/* <rect width="36" height="36" rx="8" fill="#1A2D6E"/> */}
+              {/* Arc */}
+              {/* <path d="M7 26 Q18 6 29 26" stroke="#00B3D7" strokeWidth="2.5" fill="none" strokeLinecap="round"/> */}
+              {/* D letter */}
+              {/* <text x="11" y="28" fontFamily="Arial" fontWeight="800" fontSize="13" fill="white">D</text> */}
+            {/* </svg> */}
+          {/* </div> */}
+
           <div className="relative h-9 w-9 shrink-0">
             <svg viewBox="0 0 36 36" fill="none" className="h-9 w-9">
               <rect width="36" height="36" rx="8" fill="#1A2D6E"/>
-              {/* Arc */}
-              <path d="M7 26 Q18 6 29 26" stroke="#00B3D7" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
-              {/* D letter */}
-              <text x="11" y="28" fontFamily="Arial" fontWeight="800" fontSize="13" fill="white">D</text>
+              <path d="M8 27 Q18 8 28 27" stroke="#00B3D7" strokeWidth="2.8" fill="none" strokeLinecap="round"/>
             </svg>
           </div>
           <div className="hidden sm:block leading-tight">
