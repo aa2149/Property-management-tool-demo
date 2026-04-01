@@ -4,85 +4,77 @@
 
 @layer base {
   *, *::before, *::after { box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
 
   body {
-    @apply bg-[#F0F4FF] text-brand-900 font-sans antialiased;
+    @apply bg-[#F0F6FF] text-[#0F1B45] font-sans antialiased;
     background-image:
-      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(37,99,235,0.08) 0%, transparent 70%);
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(0,179,215,0.07) 0%, transparent 70%);
     min-height: 100vh;
   }
 
-  ::selection { @apply bg-brand-200 text-brand-900; }
+  ::selection { background: #D6E6FF; color: #0F1B45; }
 }
 
 @layer components {
 
-  /* ── Inputs ── */
   .field-input {
     @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm
-           text-brand-900 shadow-card placeholder:text-slate-400
-           focus:border-brand-600 focus:outline-none focus:shadow-glow
+           text-[#0F1B45] shadow-card placeholder:text-slate-400
+           focus:border-[#00B3D7] focus:outline-none focus:shadow-glow
            transition-all duration-150;
   }
   .field-input-error {
     @apply border-red-400 focus:border-red-400 focus:shadow-[0_0_0_3px_rgb(239_68_68_/_0.15)];
   }
   .field-label {
-    @apply block text-xs font-700 uppercase tracking-widest text-slate-500 mb-2;
+    @apply block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2;
   }
   .field-error {
     @apply mt-1.5 flex items-center gap-1 text-xs font-medium text-red-500;
   }
 
-  /* ── Buttons ── */
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 rounded-xl
-           bg-brand-600 px-6 py-3 text-sm font-700 text-white
-           shadow-elevated hover:bg-brand-700 active:scale-[0.98]
+           bg-[#1A2D6E] px-6 py-3 text-sm font-bold text-white
+           shadow-elevated hover:bg-[#0F1B45] active:scale-[0.98]
            focus:outline-none focus:shadow-glow
+           disabled:opacity-50 disabled:cursor-not-allowed
+           transition-all duration-150;
+  }
+  .btn-cyan {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl
+           bg-[#00B3D7] px-6 py-3 text-sm font-bold text-white
+           shadow-elevated hover:bg-[#0093C4] active:scale-[0.98]
+           focus:outline-none
            disabled:opacity-50 disabled:cursor-not-allowed
            transition-all duration-150;
   }
   .btn-ghost {
     @apply inline-flex items-center justify-center gap-2 rounded-xl
-           border border-slate-200 bg-white px-6 py-3 text-sm font-600 text-slate-700
+           border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700
            shadow-card hover:bg-slate-50 active:scale-[0.98]
            focus:outline-none transition-all duration-150;
   }
 
-  /* ── Cards ── */
   .card {
     @apply bg-white rounded-2xl border border-slate-100 shadow-card p-6 md:p-8;
   }
   .card-section {
     @apply rounded-xl border border-slate-100 bg-slate-50 overflow-hidden;
   }
-
-  /* ── Badges ── */
   .badge {
-    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-700;
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold;
   }
 
-  /* ── Page header ── */
-  .page-header {
-    @apply mb-8;
-  }
   .page-eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full bg-brand-50 border border-brand-100
-           px-3 py-1 text-xs font-700 uppercase tracking-widest text-brand-600 mb-3;
+    @apply inline-flex items-center gap-2 rounded-full bg-[#E8F7FC] border border-[#00B3D7]/20
+           px-3 py-1 text-xs font-bold uppercase tracking-widest text-[#00B3D7] mb-3;
   }
   .page-title {
-    @apply text-3xl font-800 text-brand-900 leading-tight;
+    @apply text-3xl font-extrabold text-[#1A2D6E] leading-tight;
   }
   .page-subtitle {
-    @apply mt-2 text-sm text-slate-500 font-500 max-w-xl;
+    @apply mt-2 text-sm text-slate-500 font-medium max-w-xl;
   }
 }
-
-/* font-weight utilities */
-.font-500 { font-weight: 500; }
-.font-600 { font-weight: 600; }
-.font-700 { font-weight: 700; }
-.font-800 { font-weight: 800; }
